@@ -31,7 +31,7 @@ namespace JobScheduler
             }
         }
 
-        // The method that schedules tasks in memory
+        // The method that schedules tasks
         public void ScheduleTask(int year,int month, int day,int hour, int min, int sec, int millisec, double intervalInHour, Action task)
         {
             DateTime now = DateTime.Now;
