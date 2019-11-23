@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<tasks>
+  
+  <task id="1">
+    <taskname>First Task</taskname>
+    <message>Don't forget to drink water!</message>
+    <year>2019</year>
+    <month>11</month>
+    <day>23</day>
+    <hour>23</hour>
+    <minutes>18</minutes>
+    <seconds>45</seconds>
+    <miliseconds>0</miliseconds>
+    <intervalType>SECOND</intervalType>
+    <interval>10</interval>
+  </task>
+  
+  <task id="2">
+    <taskname>Second Task</taskname>
+    <message>Don't forget your homework!</message>
+    <year>2019</year>
+    <month>11</month>
+    <day>23</day>
+    <hour>23</hour>
+    <minutes>18</minutes>
+    <seconds>30</seconds>
+    <miliseconds>0</miliseconds>
+    <intervalType>SECOND</intervalType>
+    <interval>12</interval>
+  </task>
+  
+  
+</tasks>
