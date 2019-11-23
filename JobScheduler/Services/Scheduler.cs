@@ -14,6 +14,7 @@ namespace JobScheduler
 
         private List<Timer> timers = new List<Timer>();
 
+        // Thread safe singleton
         public static Scheduler Instance
         {
             get
@@ -30,7 +31,7 @@ namespace JobScheduler
             }
         }
 
-
+        // The method that schedules tasks in memory
         public void ScheduleTask(int year,int month, int day,int hour, int min, int sec, int millisec, double intervalInHour, Action task)
         {
             DateTime now = DateTime.Now;
@@ -54,7 +55,6 @@ namespace JobScheduler
             }, null, timeToGo, TimeSpan.FromHours(intervalInHour));
 
             timers.Add(timer);
-
 
         }
     }

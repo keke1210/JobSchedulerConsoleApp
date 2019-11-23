@@ -16,13 +16,13 @@ namespace JobScheduler
         public static void Main()
         {
             XmlDocument doc = new XmlDocument();
-
             doc.Load(@"C:\Users\Keke\Source\Repos\JobSchedulerConsoleApp\JobScheduler\SchedulerConfig.xml");
 
             XmlNodeList nodes = doc.DocumentElement.SelectNodes("/tasks/task");
 
             List<TaskModel> scheduledTasks = new List<TaskModel>();
 
+            
             foreach(XmlNode node in nodes)
             {
                 TaskModel task = new TaskModel();
@@ -50,8 +50,8 @@ namespace JobScheduler
 
                 string currentIntervalType = task.Intervaltype;
 
-                // Ne qofte se ne xml eshte konfiguruar tipi i intervalit psh. "DAY" psh do te ekzekutohet Intevali ditor 
-                //ne baze te vleres qe kemi plotesuar
+                // Ne qofte se ne xml eshte konfiguruar psh.  tipi i intervalit "DAY", do te ekzekutohet Intevali ditor 
+                //ne baze te vleres qe kemi plotesuar. By default tipi i intervalit eshte Sekondar
                 switch (currentIntervalType)
                 {
                     case "WEEK":
